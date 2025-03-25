@@ -1,0 +1,15 @@
+#button-section{
+    display: flex;
+    align-items: center;
+}
+.cirlce-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cirlce-btn img{
+    display: flex;
+    justify-content: center;    
+    width: 70%;
+    height: auto;
+}
