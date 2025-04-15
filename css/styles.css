@@ -1,18 +1,15 @@
+body{
+    background-color: #112233;
+}
+ 
 #monitor{
-    position: relative;
     display: flex;
-    text-align: center;
     justify-content: center;
 }
-#monitor img{
-    width: 50%;
-    height: auto;
-}
 
-.animation-container{
-    position: absolute;
-    left: 52%;
-    top: 52%;
+#monitor img{
+    width: 40%;
+    height: auto;
 }
 
 #button-section{
