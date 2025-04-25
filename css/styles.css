@@ -1,22 +1,24 @@
 html, body{
     background-color: #112233;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 h1{
+    font-weight: 900;
     margin: 0;
     display: flex;
     justify-content: center;
     color:#93ffd5;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 5vw;
-    padding: 2.5%;
+    padding: 2%;
     z-index: 3;
 }
 
 h2{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
     color: white;
 }
  
@@ -75,11 +77,18 @@ h2{
     margin-top: 0;
 }
 
+
 .circle-image{
     margin: 0;
-    padding:0;
+    padding: 0;
     display: flex;
     justify-content: center;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.circle-image:hover{
+    transform:scale(1.05)
 }
 
 .home-heading{
@@ -90,4 +99,47 @@ h2{
 .cirlce-btn img{
     width: 60%;
     height: auto;
+    display: block;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #01214b;
+}
+
+.logo img{
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+
+.top-nav li{
+    display: inline;
+    width: 10%;
+    height: auto;
+}
+
+.top-nav li a{
+    font-weight: 900;
+    padding: 15px;
+    color: #93ffd5;
+    text-decoration: none;
+}
+
+.top-nav li a:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.active{
+    background-color: #0A1C3F;
+}
+
