@@ -54,7 +54,6 @@ h2{
     z-index: 1;
 }
 
-
 #monitor{
     display: flex;
     justify-content: center;
@@ -76,6 +75,7 @@ h2{
     justify-content: center;
     margin-top: 0;
 }
+
 
 
 .circle-image{
@@ -132,11 +132,11 @@ header{
     padding: 15px;
     color: #93ffd5;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .top-nav li a:hover{
     color: white;
-    transition: 0.5s;
 }
 
 .active{
