@@ -1,22 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join CS Club Today!</title>
     
+    
     <style>
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #01214b; /* old header code: #01214b */
+}
+
+.logo img{
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+
+.top-nav li{
+    display: inline;
+    width: 10%;
+    height: auto;
+}
+
+.top-nav li a{
+    font-weight: 900;
+    padding: 15px;
+    color: #93ffd5;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.top-nav li a:hover{
+    color: white;
+}
+
+.active{
+    background-color: #0A1C3F;
+}
         body {
-            background-color: #A9A9A9;
+            background-color: darkgray;
+            margin: 0;
+            padding: 0;
+            font-family: "nunito sans", sans-serif;
         }
         .a4-page {
-            width: 350mm;
+            width: 90%;
             height: 350mm;
-            margin: 10px auto;
+            margin: auto;
             padding: 10mm;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
-            background-color: #e3e3f3;
+            background-color: whitesmoke;
             border: 1px solid #ddd;
         }
         h1, p {
@@ -27,7 +76,7 @@
             margin-left: auto;
             margin-right: auto;
         }
-        a:link, a:visited {
+        .joinButton a:link {
             background-color: #00ff9c;
             color: black;
             padding: 15px 25px;
@@ -37,42 +86,56 @@
             border-radius: 50px;
             font-weight: bold;
         }
-        a:hover, a:active {
-            background-color: #93ffd5;
-        }
+       
         #myDIV {
             height: 150px;
         width: 350px;
-        margin-left: 725px;
+        margin-left: 615px;
         background-color: #004C97;
         padding: 20px;
         display: flex;
         justify-content: center; /* Centers horizontally */
-        
-        
         }
         
     </style>
 </head>   
 <body>
+
+    <header> 
+
+        <a class ="logo" href="index.html"> <img src="../Images/CS-Club-Logo.png"> </a>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="spotlight.html">Spotlight</a></li>
+                <li><a class="active" href="join.html">How To Join</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
     <div class="a4-page">
-        <h1 style="color:#01214b; text-align: center; font-family:verdana;">Join CS Club!</h1>
+        <h1 style="color:#01214b; text-align: center;">Join CS Club!</h1>
         <img src="../Images/qrcode.png" style="width: 250px; height: auto;">
-        <div style="text-align: center; margin-top: 50px;">
+
+
+        <div class = "joinButton" style="text-align: center; margin-top: 50px;">
             <a href="https://groupme.com/join_group/104580373/KtHbxHRR">Join the Groupme!</a>
         </div>
+
+        
         <br>
         <img src="../Images/OldMain.png" style="width: 300px; height: auto; float: left; margin-right: 75px; margin-left: 100px;">
         <br><br><br>
-        <p style="color:#01214b; text-align: right; font-family:verdana; font-size: 1.75rem; margin-right: 100px;">Meetings in Old Main, 3rd Floor</p>
-        <p style="color:#01214b; text-align: right; font-family:verdana; font-size: 1.75rem; margin-right: 160px;">Tuesdays, 5pm-6:30pm</p>
-        <p style="color:#01214b; text-align: right; font-family:verdana; font-size: 1.5rem; margin-right: 100px;">Computer Science major not required</p>
+        <p style="color:#01214b; text-align: right;  font-size: 1.75rem; margin-right: 100px;">Meetings in Old Main, 3rd Floor</p>
+        <p style="color:#01214b; text-align: right;  font-size: 1.75rem; margin-right: 160px;">Tuesdays, 5pm-6:30pm</p>
+        <p style="color:#01214b; text-align: right;  font-size: 1.5rem; margin-right: 100px;">Computer Science major not required</p>
+        <br><br>
+        <p style="color:#01214b; text-align: right;  font-size: 2.0rem; margin-right: 150px;"> A few reasons to join </p>
         <br>
-        <br>
-        <br><br><br>
-        <p style="color:#01214b; text-align: right; font-family:verdana; font-size: 2.0rem; margin-right: 150px;"> A few reasons to join </p>
-
-        <div id="myDIV" style="font-size: 120%; display: flex; justify-content: center; align-items: center; text-align: center; flex-direction: column; color:#ddd;">
+        <div id="myDIV" style="font-size: 110%; display: flex; justify-content: center; align-items: center; text-align: center; flex-direction: column; color:#ddd;">
             <ul style="list-style-type: disc; padding-left: 20px; text-align: left;">
                 <li>Good resume builder</b></li>
                 <li>Meet new people</b></li>
@@ -85,10 +148,22 @@
         </div>
         <br><br><br>
         <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
         <p style="color:#01214b; text-align: center; font-family:verdana; font-size: 1.5rem; margin-right: 0;">Need more information? Contact an officer</p>
-        
+        <div style="text-align: center; margin-bottom: 20px;">
+            <a style="color: #01214b; font-size: 1.25rem; text-decoration: none;" href="mailto:mpherrera@eiu.edu">kfwarner@eiu.edu (President)</a>
+            <br>
+            <a style="color: #01214b; font-size: 1.25rem; text-decoration: none;" href="mailto:mpherrera@eiu.edu">ifeujiodongmo@eiu.edu (Vice President)</a>
+            <br>
+            <a style="color: #01214b; font-size: 1.25rem; text-decoration: none;" href="mailto:mpherrera@eiu.edu">mpherrera@eiu.edu (Secretatary) </a>
+            <br>
+            <a style="color: #01214b; font-size: 1.25rem; text-decoration: none;" href="mailto:mpherrera@eiu.edu">mbayramova@eiu.edu (Treasurer)</a>
+        </div>
 
 
-    
 </body>
 </html>
