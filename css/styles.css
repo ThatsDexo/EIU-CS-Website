@@ -20,6 +20,8 @@ h1{
 h2{
     font-weight: 900;
     color: white;
+    display: flex;
+    justify-content: center
 }
  
 .top-rectangle{
@@ -76,8 +78,6 @@ h2{
     margin-top: 0;
 }
 
-
-
 .circle-image{
     margin: 0;
     padding: 0;
@@ -106,7 +106,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #01214b;
+    background-color: #01214b; /* old header code: #01214b */
 }
 
 .logo img{
@@ -141,5 +141,47 @@ header{
 
 .active{
     background-color: #0A1C3F;
+}
+
+/* Spotlight Page */
+
+#spotlight-description{
+    margin-top: 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.spotlight-posts{
+    display: flex;
+    justify-content: center;
+}
+
+.background-page{
+    width: 90%;
+    background-color: #1A2E45;
+    position: absolute;
+}
+
+.post{
+    padding:5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.date, .description{
+    width:80%;
+    margin: 0;
+    color: white;
+}
+
+.date{
+    font-style: italic;
+}
+
+.post img{
+    width: 80%;
+    height: auto;
 }
 
